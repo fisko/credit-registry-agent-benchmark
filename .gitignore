@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+data/
+work/
+runs/
+audit.csv
+agent_summary.csv
+*.parquet

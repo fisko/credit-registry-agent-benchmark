@@ -1,0 +1,184 @@
+{
+ "cal_auc_mean": 0.8463194521367894,
+ "cal_auc_sd": 2.943303283796592e-05,
+ "cal_ks_mean": 0.6116424960885786,
+ "cal_ks_sd": 0.0001466446249429022,
+ "cal_pr_auc_mean": 0.6947943475706065,
+ "cal_pr_auc_sd": 0.0004801104370843676,
+ "delta": {
+  "auc": 0.005,
+  "ks": 0.005,
+  "pr_auc": 0.005
+ },
+ "cal_n": 10,
+ "ref_auc_mean": 0.847589826652187,
+ "ref_auc_sd_within": 0.000150373849116414,
+ "ref_auc_sd_between": 0.002050930676496988,
+ "ref_ks_mean": 0.6134691401990724,
+ "ref_ks_sd_within": 0.00014100570605149034,
+ "ref_ks_sd_between": 0.004131702534511624,
+ "ref_pr_auc_mean": 0.6929370873277609,
+ "ref_pr_auc_sd_within": 0.0006618495638468638,
+ "ref_pr_auc_sd_between": 0.0066285222800830735,
+ "ref_f1_mean": 0.6424232730067271,
+ "ref_f1_sd_within": 0.001411856246063398,
+ "ref_f1_sd_between": 0.006166853145688849,
+ "ref_oracle_mean": 0.8626084524646579,
+ "ref_gap_to_oracle": 0.015018625812470932,
+ "ref_models": {
+  "RF": 13,
+  "DT": 12
+ },
+ "ref_J_within": 1.0,
+ "ref_J_all": 1.0,
+ "ref_featsets": {
+  "delay_days+interest_type": 25
+ },
+ "ref_seconds": 2.4574180126190184,
+ "mut": {
+  "canary": {
+   "auc": 0.990381459615516,
+   "auc_diff_mean": 0.14279163296332908,
+   "auc_diff_min": 0.13922513402033854,
+   "auc_diff_max": 0.14525468027983202,
+   "ks": 0.94817464946282,
+   "pr_auc": 0.9564674097039574,
+   "val_auc": 0.9903728308560883,
+   "val_test_gap": -8.62875942774899e-06,
+   "oracle": 0.8626084524646579,
+   "above_oracle_runs": 25,
+   "n_runs": 25,
+   "canary_used": 25,
+   "dup_rate": 0.0,
+   "within_margin_all_seeds": false,
+   "F_strict": 0.9,
+   "F_adm": 0.9,
+   "models": {
+    "RF": 20,
+    "DT": 4,
+    "LR": 1
+   },
+   "featsets": {
+    "collection_flag+delay_days+interest_type": 25
+   }
+  },
+  "impute_winsor": {
+   "auc": 0.8476252213530349,
+   "auc_diff_mean": 3.539470084759078e-05,
+   "auc_diff_min": -8.34018081796728e-05,
+   "auc_diff_max": 0.0001506768417944837,
+   "ks": 0.6135132211883872,
+   "pr_auc": 0.6932525579762833,
+   "val_auc": 0.848904281737887,
+   "val_test_gap": 0.001279060384852233,
+   "oracle": 0.8626084524646579,
+   "above_oracle_runs": 0,
+   "n_runs": 25,
+   "canary_used": 0,
+   "dup_rate": 0.0,
+   "within_margin_all_seeds": true,
+   "F_strict": 0.9,
+   "F_adm": 1.0,
+   "models": {
+    "RF": 18,
+    "DT": 7
+   },
+   "featsets": {
+    "delay_days+interest_type": 25
+   }
+  },
+  "select_all": {
+   "auc": 0.8475785539454437,
+   "auc_diff_mean": -1.1272706743392646e-05,
+   "auc_diff_min": -5.636353371696323e-05,
+   "auc_diff_max": 0.0,
+   "ks": 0.6134637696933827,
+   "pr_auc": 0.6929088787354649,
+   "val_auc": 0.8485636550852225,
+   "val_test_gap": 0.0009851011397787035,
+   "oracle": 0.8626084524646579,
+   "above_oracle_runs": 0,
+   "n_runs": 25,
+   "canary_used": 0,
+   "dup_rate": 0.0,
+   "within_margin_all_seeds": true,
+   "F_strict": 0.85,
+   "F_adm": 0.85,
+   "models": {
+    "DT": 13,
+    "RF": 12
+   },
+   "featsets": {
+    "delay_days+interest_type": 25
+   }
+  },
+  "oversample_first": {
+   "auc": 0.8484159724489175,
+   "auc_diff_mean": 0.0008261457967303932,
+   "auc_diff_min": -8.044457228018054e-05,
+   "auc_diff_max": 0.0031036748784778467,
+   "ks": 0.6135008608132213,
+   "pr_auc": 0.6959874508903353,
+   "val_auc": 0.8487658014043323,
+   "val_test_gap": 0.00034982895541467495,
+   "oracle": 0.8626084524646579,
+   "above_oracle_runs": 0,
+   "n_runs": 25,
+   "canary_used": 0,
+   "dup_rate": 0.5013421850035258,
+   "within_margin_all_seeds": true,
+   "F_strict": 0.75,
+   "F_adm": 0.75,
+   "models": {
+    "RF": 19,
+    "DT": 6
+   },
+   "featsets": {
+    "delay_days+interest_type": 20,
+    "age+delay_days+interest_type": 3,
+    "delay_days+interest_type+paid_loans": 2
+   }
+  },
+  "ref": {
+   "val_auc": 0.8487480892833895,
+   "val_test_gap": 0.0011582626312024358,
+   "auc": 0.847589826652187,
+   "oracle": 0.8626084524646579
+  }
+ },
+ "t6": {
+  "auc_mean": 0.850317486081729,
+  "auc_sd": 5.9519705331658724e-06,
+  "ks": 0.6157729627774953,
+  "sec_mean": 13.075791835784912,
+  "gen_seconds": 0.5206232070922852,
+  "n_pool": 799745,
+  "n_test": 200255,
+  "n": 3,
+  "oracle": 0.8658748143699934
+ },
+ "t7": {
+  "stage": "tier1e7_sql",
+  "gen_seconds": 9.319172143936157,
+  "rows": 10000000.0,
+  "default_rate": 0.1682315,
+  "sql_seconds": 0.7106678485870361,
+  "by_interest": [
+   [
+    "F",
+    599327,
+    0.06588056269782606
+   ],
+   [
+    "P",
+    9244910,
+    0.17461143483278907
+   ],
+   [
+    "V",
+    155763,
+    0.1833811624069901
+   ]
+  ]
+ }
+}
